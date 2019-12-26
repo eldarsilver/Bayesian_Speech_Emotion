@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+
+<launch>
+  <node name="rz_se_bica" pkg="rz_se" type="rz_se_bica.py" output="screen">
+    <rosparam command="load" file="$(find rz_se)/launch/rz_se_params.yaml"/>
+  </node>
+</launch>

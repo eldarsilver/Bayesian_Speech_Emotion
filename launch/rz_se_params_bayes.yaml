@@ -1,0 +1,60 @@
+# Set the topic where AIDA will write the emotion of each audio
+audio_emotions_topic: "/pepper_utils/audio_emotion"
+
+# When prediction mode is set to "cloud", this param represents the name of the ML model
+gcp_name: "rz_se"
+
+# When prediction mode is set to "cloud", this param represents the name of the Google Cloud project containing the ML model
+gcp_project: "dh-dia4a"
+
+# When prediction mode is set to "cloud", this param represents the version of the ML model
+gcp_version: "v1"
+
+# path to the JSON file where de model architecture is configured
+json_path: "/home/datahack/catkin_ws/src/rz_se/src/experiments/bayes/params.json"
+
+# path to the face recognition model
+model_path: "/home/datahack/catkin_ws/src/rz_se/src/experiments/bayes"
+
+# File path to store the emotion of each audio. Each line will have the following format: 
+# "The emotion of this audio " + str(filename_raw) + " is: " + str(emo) + "\n"
+emotions_logfile: "/home/datahack/catkin_ws/src/rz_se/src/audio_recog/emotions.txt"
+
+# robot IP
+robot_IP: "192.168.1.175"
+
+# Set your Speech2Text topic here, this is where the Speech2Text node shoud publish
+s2t_topic: "/pepper_utils/hri_comm"
+
+# Prediction mode set as "local" to use local GPU for prediction otherwise set as "cloud" to use Google Cloud ML deployed model for prediction
+pred_mode: "local"
+
+# The topic where the AIDA publishes the raw audio it captures.
+raw_audio_topic: "/pepper_robot/audio"
+
+# Number of channels for the desired conversion.
+dest_num_channels: "1"
+
+# Rate for the desired conversion.
+dest_rate: "16000"
+
+# Set the number of iterations after which the sound will be dumped into a WAV file
+max_iter: 31
+
+# File path to store the raw, WAV and downsampled WAV files.
+# Raw and WAV will be deleted so only downsampled WAV will remain.
+sound_path: "/home/datahack/catkin_ws/src/rz_se/src/audio_recog/"
+
+# Set the topic where AIDA is going to write the intent related to the input msg
+wav_topic: "/pepper_utils/wav_names"
+
+# File path to store the statistics of the predictions like softmax values, variances, etc.
+stats_logfile: "/home/datahack/catkin_ws/src/rz_se/src/audio_recog/pred_stats.txt"
+
+# Set the topic where AIDA is going to publish statistics related to the predictions
+stats_topic: "/pepper_utils/pred_stats"
+
+
+
+
+

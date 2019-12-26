@@ -1,0 +1,1 @@
+0:'Enfado', 1:'Miedo', 2:'Alegria', 3:'Tristeza', 4:'Neutral'

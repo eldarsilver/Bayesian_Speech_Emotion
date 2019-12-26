@@ -1,0 +1,11 @@
+Si se quiere crear o ampliar el dataset existente, se utilizará el nodo mic2wav ($HOME/catkin_ws/src/mic2wav), este nodo
+ se puede activar ejecutando: roslaunch mic2wav mic2wav.launch
+
+Para crear un script que permita reconstruir un audio a partir del TFrecord que guarda el campo audio (las mfccs y el label de la emoción) se recomienda seguir las indicaciones para generar un audio
+a partir de las mfccs indicadas en los siguientes enlaces:
+
+https://github.com/librosa/librosa/issues/424
+
+https://github.com/librosa/librosa/issues/660
+
+

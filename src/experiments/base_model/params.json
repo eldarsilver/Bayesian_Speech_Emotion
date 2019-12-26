@@ -1,0 +1,17 @@
+{
+    "learning_rate": 1e-11,
+    "batch_size": 8,
+    "num_epochs": 80,
+    "num_classes": 5,
+    "mfcc_size": 40,
+    "sample_rate": 44100,
+    "mono": 1,
+
+    "num_channels": 1,
+
+    
+    "num_parallel_calls": 4,
+    "save_summary_steps": 50,
+    
+    "checkpoint_path": "/home/datahack/catkin_ws/src/re_fr/src/config/20180402-114759/model-20180402-114759.ckpt-275"
+}
